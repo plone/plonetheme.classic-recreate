@@ -198,6 +198,16 @@ h3, h4, h5, h6 {
 dl.searchResults dt {
     font-size: 140%;
     font-weight: normal;
+    margin-top: 1em;
+}
+dl.searchResults dd {
+    margin-left: 0;
+    padding-left:0;
+    margin-bottom: 1em;    
+}
+dl.searchResults cite {
+	color: &dtml-contentViewFontColor;;
+	font-style: normal;
 }
 
 form.searchPage {
