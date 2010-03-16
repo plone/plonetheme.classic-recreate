@@ -213,6 +213,12 @@ dl.searchResults cite {
 form.searchPage {
     text-align: center;
 }
+form.searchPage div.search-advanced {
+	text-align: left;
+}
+p.moreSearchOptions {
+	text-align: center;
+}
 
 input.searchPage {
     font-size: 200% !important;
