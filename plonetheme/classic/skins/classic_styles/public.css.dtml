@@ -216,8 +216,12 @@ dl.searchResults cite {
 form.searchPage {
     text-align: center;
 }
-form.searchPage div.search-advanced {
+form.searchPage div#search-filter {
 	text-align: left;
+	background: &dtml-globalBackgroundColor;;
+	border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
+	padding: 0.5em 1em;
+	margin-bottom: 1em;
 }
 p.moreSearchOptions {
 	text-align: center;
