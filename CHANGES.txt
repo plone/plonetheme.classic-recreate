@@ -1,9 +1,49 @@
 Changelog
 =========
 
-1.0b4 - unreleased
+1.0.2 - unreleased
 ------------------
 
+
+1.0.1 - 2010-07-18
+------------------
+
+- Reset the font-size for the body of documents being edited in TinyMCE.
+  Fixes http://dev.plone.org/plone/ticket/10779
+  [davisagli]
+
+- Copy CSS from sunburst theme to make sure we still get icons for the file
+  and image types in the add menu. Fixes
+  http://dev.plone.org/plone/ticket/10713
+  [davisagli]
+
+- Update license to GPL version 2 only.
+  [hannosch]
+
+1.0 - 2010-07-07
+----------------
+
+- Add CSS for sprite versions of the core content type icons, based on the
+  Sunburst theme. Fixes http://dev.plone.org/plone/ticket/10485
+  [davisagli]
+
+1.0b5 - 2010-06-13
+------------------
+
+- Add ILegacyThemeSpecific interface for use with the "Old Plone 3 Custom
+  Theme" skin which may be added during upgrade from Plone 3, to make sure
+  it gets the right viewlets.
+  [davisagli]
+
+- Set overflow-y:auto on ajax overlays to support forms longer than the
+  viewport.
+  [stevem]
+
+1.0b4 - 2010-05-01
+------------------
+
+- Styling tweaks for full item view.
+  [elro]
 
 1.0b3 - 2010-04-10
 ------------------
