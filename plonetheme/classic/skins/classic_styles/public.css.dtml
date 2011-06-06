@@ -205,55 +205,79 @@ h3, h4, h5, h6 {
 
 /* Search results elements */
 
-dl.searchResults dt {
-    font-size: 140%;
-    font-weight: normal;
-    margin-top: 1em;
-}
-dl.searchResults dd {
-    margin-left: 0;
-    padding-left:0;
-    margin-bottom: 1em;    
-}
-dl.searchResults cite {
-	color: &dtml-contentViewFontColor;;
-	font-style: normal;
-}
 
-form.searchPage {
+
+fieldset#search-field {
+    border: none !important;
     text-align: center;
 }
-form.searchPage div#search-filter {
-	text-align: left;
-	background: &dtml-globalBackgroundColor;;
-	border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;
-	padding: 0.5em 1em;
-	margin-bottom: 1em;
-}
-p.moreSearchOptions {
-	text-align: center;
-}
-
 input.searchPage {
-    font-size: 200% !important;
+    font-size:200% !important;
 }
-
-form.searchPage input.searchButton {
-    background-position:5px 7px;
-    padding:1px 10px 1px 25px;
+#rss-subscription {
+	float: left;
+	line-height: 1.92em;
 }
-
-/* Collapsible elements in search_form */
-
-.collapsible .collapser.collapsed {
-    padding-right: 14px;
-    background: url('&dtml-portal_url;/arrowRight.png') center right no-repeat;
-} 
-
-.collapsible .collapser.expanded {
-    padding-right: 14px;
-    background: url('&dtml-portal_url;/arrowDown.png') center right no-repeat;
-} 
+#search-filter fieldset {
+    border: none !important;
+    position: relative;
+    padding: 0;
+    margin-top: 1px;
+}        
+#search-filter fieldset .field {
+    background: #eee;
+    margin-bottom: 1px;
+    margin-top: 0;            
+    padding: 1em 1.5em;
+}
+#search-filter .formControls {
+    text-align:center
+}
+#search-results-wrapper {
+    margin-top: 1em;
+}
+form.searchPage h1.documentFirstHeading {
+    font-weight:normal; 
+    letter-spacing:0;
+	float: left;
+	margin-right: 0.8em;
+	border-bottom: none;
+}
+form.searchPage h1.documentFirstHeading .highlightedSearchTerm {
+    background: transparent !important;
+}
+#search-results-bar > * {
+    float: left;
+}
+#searchResultsSort{ 
+	float:right
+}
+#search-results-bar {
+    position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    border-top: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;    
+    padding: 1em 0;
+}
+#search-results-bar dl.actionMenu {
+    margin-bottom: 0;
+    margin-left: 1em;
+}
+#search-results-bar dt.actionMenuHeader a {
+    border-bottom: none;
+    text-decoration: none;
+}
+#search-results-bar dt.actionMenuHeader a::after {
+	content: " ▼";
+}
+#content #search-results dd {
+    margin-bottom: 1em;
+}
+#content #search-results cite {
+    color: &dtml-contentViewFontColor;;
+}
 
 /* LiveSearch styles */
 .LSRes {
